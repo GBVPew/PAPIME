@@ -13,7 +13,7 @@ p.ex1 {
   padding: 0px 150px 0px;
 }
 p.ex2 {
-  border: 7px solid green; 
+  border: 7px solid white; 
   padding: 0px 150px 0px;
 }
 
