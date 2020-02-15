@@ -25,15 +25,7 @@
       </center>
         <table>
             <tr>
-                <td>
-                   <b>Materiales:</b>
-                   <ol type=”A”>
-                      <li>1 Arduino UNO</li>
-                      <li>1 Diodo Led</li>
-                      <li>1 Resistencia 220Ω</li>
-                   </ol>                                   
-                </td>
-                <td>                    
+              <td>                    
             <b>Descripción del ejercicio:</b><br></br>  
             Un ejercicio básico que consiste en encender y apagar un led que conectamos en el PIN 13  y a el pin GND(Tierra) del Arduino . El tiempo de encendido y apagado es de 1 segundo. <br></br>           
                   
@@ -44,23 +36,40 @@
     </br>
   </br>
  
+             </td>
 
-              </td>
-
+                <td>
+                   <b>Materiales:</b>
+                   <ol type=”A”>
+                      <li>1 Arduino UNO</li>
+                      <li>1 Diodo Led</li>
+                      <li>1 Resistencia 220Ω</li>
+                   </ol>                                   
+                </td>
+                
             </tr>
         </table>
 <center>
-<div style="
-            background : #ffffff;
-            padding : 10px;
-            width : 700px;
-            height : 200px;
-            overflow : auto; ">
-<pre>
-                <div align="center">
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <style>
+    #scroll{
+        ;
+        height:100px;
+        width:500px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    </style>
+</head>
+ 
+<body>
+ <div id="scroll">
+  <div align="left">
                 <p color="000000" size="4" face="Arial">
                       int ledPin = 13; // Definición de la salida en el PIN 13
-                      void setup() //Configuración
+                      void setup() //Configuración 
                       {
                       pinMode(ledPin, OUTPUT); // designa la salida digital al PIN 13
                       }
@@ -72,8 +81,9 @@
                       delay(1000); // espera 1 seg. (tiempo apagado)
                       }                                                                                                                              
                 </p>
-   </div>
- </pre>                                                                                              
+           </div>                                              
+</div>
+ 
 </center>
        
 
