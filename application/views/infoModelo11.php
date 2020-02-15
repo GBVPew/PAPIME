@@ -1,70 +1,94 @@
-<p></p>
-<div class="center">
-      <a href="<?php echo base_url();?>modelos/raspberry" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
-  </div> 
-  <!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-	<title>Practica 11</title>
-<style>
-	
-p.ex1 {
+  <style>
+
+
+    td{
+      font-size: 15px;
+      line-height: 20px;
+      padding: 30px 100px 30px 100px;
+      text-align: justify;
+      vertical-align: top;
+      width: 50%;
+  }
+  
+
  
-  padding: 0px 150px 0px;
-}
-p.ex2 {
-  border: 7px solid green; 
-  padding: 0px 150px 0px;
-}
 
-
-</style>
+ </style>
 </head>
+
+    <body>
+
+      <center style="font-size: 30px ">
+     <p color="000000" size="10" face="Arial">Carro a control remoto con sensor de distancia</p>
+      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic11.png')?>"
+      width="300"
+      height="300"
+      style="padding-bottom: 30px" >
+      </center>
+        <table>
+            <tr>
+              <td>                    
+            <b>Descripción del ejercicio:</b><br></br>  
+            El proyecto trata de una construcción de un carro a control remoto programado en Arduino Uno empleando módulos en su base de construcción a través de una guía electrónica. El objetivo es la siguiente, este robot permite ser controlado mediante un dispositivo móvil a través de una conexión sin cables, permite controlar al usuario y también se puede controlar automáticamente por si sólo con el módulo sensor de distancia que le permite no chocar con alguno obstáculo que tenga en su camino.<br></br>           
+                  
+          
+            <br>
+                <br>
+            El codigo que usaremos sera el siguiente:
+    </br>
+  </br>
+ 
+             </td>
+
+                <td>
+                   <b>Materiales:</b>
+                   <ol type=”A”>
+                      <li>1 Arduino UNO</li>
+                      <li>3 Sensores Ultrasonicos HC-SR04</li>
+                      <li>1 Placa de pruebas (Protoboard)</li>
+                      <li>1 Alambre para conexiones</li>
+                      <li>1 Bluetooth Low Energy (BLE) Module (Generic)</li>
+                      <li>5 LEDs (rojos)    </li>
+                      <li>2 LEDs (verdes)</li>
+                      <li>6 resistencias de 330Ω   </li>
+                      <li>1 Puente H(L293D)</li>
+                   </ol>                                   
+                </td>
+                
+            </tr>
+        </table>
+<center>
+
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <style>
+    #scroll{
+       padding-top: 20px ;
+        height:200px;
+        width:600px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    </style>
+</head>
+ 
 <body>
-<font color="#000000"face="Arial">
-<center>
-<h1><br></br>Practica 11: Carro a control remoto con sensor de distancia
-<br></br></h1>
-<img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic11.png')?>">
-</center>
+   <p></p>
+  <div class="center">
+      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
+      <p></p>                 
+  </div> 
+ <div id="scroll">
+  <div align="left">
+                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
 
-
-
-
-<pre>
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Materiales:</b>
-
-1 Arduino UNO
-3 Sensores Ultrasonicos HC-SR04
-1 Placa de pruebas (Protoboard)  
-1 Alambre para conexiones
-1 Bluetooth Low Energy (BLE) Module (Generic)
-5 LEDs (rojos)      
-2 LEDs (verdes)
-6 resistencias de 330Ω   
-1 Puente H(L293D)
-
-</p>
-</pre>
-
-    
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Descripción del ejercicio:</b><br></br>
-El proyecto trata de una construcción de un carro a control remoto programado en Arduino Uno empleando módulos en su base de construcción a través de una guía electrónica. El objetivo es la siguiente, este robot permite ser controlado mediante un dispositivo móvil a través de una conexión sin cables, permite controlar al usuario y también se puede controlar automáticamente por si sólo con el módulo sensor de distancia que le permite no chocar con alguno obstáculo que tenga en su camino.
-<br>
-<br>
-<center>
-<img src="imagenes/arduino/practic11.png">
-</center>
-El codigo que usaremos sera el siguiente:
-</br>
-</br>
-</p>
-
-<pre>
-<p class="ex2"><font color="#000000" size="4" face="Arial">
-/*
+                     /*
 ARDUINO  L293D(Puente H)        
  5          10
  6          15
@@ -205,9 +229,18 @@ void loop()  {
      analogWrite(izqA, 0);
   }
   
-}                                                                                                                            
-</p>
-</pre>
-</font>
-</body>
+}                                                                                            
+                </p>
+           </div>                                              
+</div>
+ 
+</center>
+       
+
+    </body>
+
+   
+
+<p></p>
+
 </html>
