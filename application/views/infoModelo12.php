@@ -1,62 +1,95 @@
-<p></p>s
-<div class="center">
-      <a href="<?php echo base_url();?>modelos/raspberry" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
-  </div> 
-  <!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-	<title>Practica 12</title>
-<style>
-	
-p.ex1 {
+  <style>
+
+
+    td{
+      font-size: 15px;
+      line-height: 20px;
+      padding: 30px 100px 30px 100px;
+      text-align: justify;
+      vertical-align: top;
+      width: 50%;
+  }
+  
+
  
-  padding: 0px 150px 0px;
-}
-p.ex2 {
-  border: 7px solid green; 
-  padding: 0px 150px 0px;
-}
 
-
-</style>
+ </style>
 </head>
-<body>
-<font color="#000000"face="Arial">
+
+    <body>
+
+      <center style="font-size: 30px ">
+     <p color="000000" size="10" face="Arial">Juego Snake con Matriz Led 8x8</p>
+      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic12.png')?>"
+      width="300"
+      height="300"
+      style="padding-bottom: 30px" >
+      </center>
+        <table>
+            <tr>
+              <td>                    
+            <b>Descripción del ejercicio:</b><br></br>  
+            Este esta practica crearemos el juego de serpiente portátil(snake), para esto aprenderemos a conectar los componentes mas importantes la matriz LED y el control de mando(joystick).  <br></br>           
+                  
+          
+           <br>
+                <br>
+            El codigo que usaremos sera el siguiente:
+    </br>
+  </br>
+ 
+             </td>
+
+                <td>
+                   <b>Materiales:</b>
+                   <ol type=”A”>
+                      <li>1 Arduino UNO
+                      </li>
+                      <li>1 Módulo de joystick 
+                      </li>
+                      <li>1 Matriz Led 8x8
+                      </li>
+                      <li>1 Placa de pruebas (Protoboard)
+                      </li>
+                      <li>1 Alambre para conexiones
+                      </li>
+                   </ol>                                   
+                </td>
+                
+            </tr>
+        </table>
 <center>
-<h1><br></br>Practica 12: Juego Snake con Matriz Led 8x8
-<br></br></h1>
-<img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic12.png')?>">
-</center>
 
 
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <style>
+    #scroll{
+       padding-top: 20px ;
+        height:200px;
+        width:600px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    </style>
+</head>
+ 
+<body>
+   <p></p>
+  <div class="center">
+      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
+      <p></p>                 
+  </div> 
+ <div id="scroll">
+  <div align="left">
+                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
 
-
-<pre>
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Materiales:</b>
-
-1 Arduino UNO
-1 Módulo de joystick 
-1 Matriz Led 8x8
-1 Placa de pruebas (Protoboard)  
-1 Alambre para conexiones                                                                                                        
-</p>
-</pre>
-
-    
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Descripción del ejercicio:</b><br></br>
-Este esta practica crearemos el juego de serpiente portátil(snake), para esto aprenderemos a conectar los componentes mas importantes la matriz LED y el control de mando(joystick). 
-<br>
-<br>
-El codigo que usaremos sera el siguiente:
-</br>
-</br>
-</p>
-
-<pre>
-<p class="ex2"><font color="#000000" size="4" face="Arial">
-#include "LedControlMS.h"
+                      #include "LedControlMS.h"
 
 
 #define NBR_MTX 2 
@@ -245,9 +278,18 @@ void scrollRight(char ch){
     delay(300);
     lc.clearDisplay(0);
   }
-}                                                                                                                               
-</p>
-</pre>
-</font>
-</body>
+}                                                   
+                </p>
+           </div>                                              
+</div>
+ 
+</center>
+       
+
+    </body>
+
+   
+
+<p></p>
+
 </html>

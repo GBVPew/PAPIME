@@ -1,79 +1,111 @@
-<p></p>
-<div class="center">
-      <a href="<?php echo base_url();?>modelos/raspberry" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
-  </div> 
-  <!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-	<title>Practica 17</title>
-<style>
-	
-p.ex1 {
+  <style>
+
+
+    td{
+      font-size: 15px;
+      line-height: 20px;
+      padding: 30px 100px 30px 100px;
+      text-align: justify;
+      vertical-align: top;
+      width: 50%;
+  }
+  
+
  
-  padding: 0px 150px 0px;
-}
-p.ex2 {
-  border: 7px solid green; 
-  padding: 0px 150px 0px;
-}
 
-
-</style>
+ </style>
 </head>
+
+    <body>
+
+      <center style="font-size: 30px ">
+     <p color="000000" size="10" face="Arial"> Carro con control remoto Bluetooth</p>
+      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic17.png')?>"
+      width="300"
+      height="300"
+      style="padding-bottom: 30px" >
+      </center>
+        <table>
+            <tr>
+              <td>                    
+            <b>Descripción del ejercicio:</b><br></br>  
+            Un automóvil robot Arduino 4WD controlado por teléfono inteligente o un robot Bluetooth Arduino. Puede moverse hacia adelante y hacia atrás, hacia la izquierda y hacia la derecha, cambiar su velocidad, encender / apagar las luces delanteras y traseras y también puede sonar. <br></br>           
+                  
+            <b>Requisitos:</b>  
+
+            Arduino Bluetooth RC Car(PlayStore)
+            Soldador (genérico) 
+                <br>
+            El codigo que usaremos sera el siguiente:
+    </br>
+  </br>
+ 
+             </td>
+
+                <td>
+                   <b>Materiales:</b>
+                   <ol type=”A”>
+                      <li> 1 Arduino UNO
+                      </li>
+                      <li> 1 HC-06 Bluetooth Module
+                      </li>
+                      <li> 1 Placa de pruebas (Protoboard)  
+
+                      </li>
+                      <li> 1 Alambre para conexiones 
+                      </li>
+                      <li> 1 4WD Smart robot Car Chassis Kit
+                      </li>
+                      <li>2 Spark Fun Dual H-Bridge motor driver (L298)
+                      </li>
+                      <li>4 LEDs
+                      </li>
+                      <li>1 Buzzer(Sumbador) 
+                      </li>
+                      <li>4 Resistencias de 221Ω
+                      </li>
+                      <li>1 Pila de 9V
+                      </li>
+                      <li>2 Arduino Switch
+                      </li>
+                     
+                   </ol>                                   
+                </td>
+                
+            </tr>
+        </table>
+<center>
+
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <style>
+    #scroll{
+       padding-top: 20px ;
+        height:200px;
+        width:600px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    </style>
+</head>
+ 
 <body>
-<font color="#000000"face="Arial">
-<center>
-<h1><br></br>Practica 17: Carro con control remoto Bluetooth
-<br></br></h1>
-<img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic17.png')?>">
-</center>
+   <p></p>
+  <div class="center">
+      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
+      <p></p>                 
+  </div> 
+ <div id="scroll">
+  <div align="left">
+                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
 
-
-
-
-<pre>
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Materiales:</b>
-
-1 Arduino UNO
-1 HC-06 Bluetooth Module
-1 Placa de pruebas (Protoboard)  
-1 Alambre para conexiones 
-1 4WD Smart robot Car Chassis Kit
-2 Spark Fun Dual H-Bridge motor driver (L298)
-4 LEDs
-1 Buzzer(Sumbador) 
-4 Resistencias de 221Ω
-1 Pila de 9V
-2 Arduino Switch
-
-<b>Requisitos:</b>	
-
-Arduino Bluetooth RC Car(PlayStore)
-Soldador (genérico)                                                                                                   
-</p>
-</pre>
-
-    
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Descripción del ejercicio:</b><br></br>
-Un automóvil robot Arduino 4WD controlado por teléfono inteligente o un robot Bluetooth Arduino. Puede moverse hacia adelante y hacia atrás, hacia la izquierda y hacia la derecha, cambiar su velocidad, encender / apagar las luces delanteras y traseras y también puede sonar.
-<br>
-<br>
-<center>
-<img src="imagenes/arduino/practic17.1.png">
-</center>
-<br>
-<br>
-El codigo que usaremos sera el siguiente:
-</br>
-</br>
-</p>
-
-
-<pre>
-<p class="ex2"><font color="#000000" size="4" face="Arial">
-#define light_FR  14    //LED Front Right   pin A0 for Arduino Uno
+                     #define light_FR  14    //LED Front Right   pin A0 for Arduino Uno
 #define light_FL  15    //LED Front Left    pin A1 for Arduino Uno
 #define light_BR  16    //LED Back Right    pin A2 for Arduino Uno
 #define light_BL  17    //LED Back Left     pin A3 for Arduino Uno
@@ -84,18 +116,18 @@ El codigo que usaremos sera el siguiente:
 #define ENA_m2 10       // Enable/speed motor Front Left
 #define ENB_m2 11       // Enable/speed motor Back Left
 
-#define IN_11  2    		// L298N #1 in 1 motor Front Right
-#define IN_12  3    		// L298N #1 in 2 motor Front Right
-#define IN_13  4    		// L298N #1 in 3 motor Back Right
-#define IN_14  7    		// L298N #1 in 4 motor Back Right
+#define IN_11  2        // L298N #1 in 1 motor Front Right
+#define IN_12  3        // L298N #1 in 2 motor Front Right
+#define IN_13  4        // L298N #1 in 3 motor Back Right
+#define IN_14  7        // L298N #1 in 4 motor Back Right
 
-#define IN_21  8    		// L298N #2 in 1 motor Front Left
-#define IN_22  9    		// L298N #2 in 2 motor Front Left
-#define IN_23  12   		// L298N #2 in 3 motor Back Left
-#define IN_24  13   		// L298N #2 in 4 motor Back Left
+#define IN_21  8        // L298N #2 in 1 motor Front Left
+#define IN_22  9        // L298N #2 in 2 motor Front Left
+#define IN_23  12       // L298N #2 in 3 motor Back Left
+#define IN_24  13       // L298N #2 in 4 motor Back Left
 
-int command; 			      //Int to store app command state.
-int speedCar = 100; 		// 50 - 255.
+int command;            //Int to store app command state.
+int speedCar = 100;     // 50 - 255.
 int speed_Coeff = 4;
 boolean lightFront = false;
 boolean lightBack = false;
@@ -103,16 +135,16 @@ boolean horn = false;
 
 void setup() {  
    
-	  pinMode(light_FR, OUTPUT);
+    pinMode(light_FR, OUTPUT);
     pinMode(light_FL, OUTPUT);
     pinMode(light_BR, OUTPUT);
     pinMode(light_BL, OUTPUT);
     pinMode(horn_Buzz, OUTPUT);
     
-	  pinMode(ENA_m1, OUTPUT);
-  	pinMode(ENB_m1, OUTPUT);
-	  pinMode(ENA_m2, OUTPUT);
-	  pinMode(ENB_m2, OUTPUT);
+    pinMode(ENA_m1, OUTPUT);
+    pinMode(ENB_m1, OUTPUT);
+    pinMode(ENA_m2, OUTPUT);
+    pinMode(ENB_m2, OUTPUT);
   
     pinMode(IN_11, OUTPUT);
     pinMode(IN_12, OUTPUT);
@@ -124,7 +156,7 @@ void setup() {
     pinMode(IN_23, OUTPUT);
     pinMode(IN_24, OUTPUT);
 
-	Serial.begin(9600); 
+  Serial.begin(9600); 
 
   } 
 
@@ -132,21 +164,21 @@ void goAhead(){
 
       digitalWrite(IN_11, HIGH);
       digitalWrite(IN_12, LOW);
-	    analogWrite(ENA_m1, speedCar);
+      analogWrite(ENA_m1, speedCar);
 
       digitalWrite(IN_13, LOW);
       digitalWrite(IN_14, HIGH);
-	    analogWrite(ENB_m1, speedCar);
+      analogWrite(ENB_m1, speedCar);
 
 
       digitalWrite(IN_21, LOW);
       digitalWrite(IN_22, HIGH);
-	    analogWrite(ENA_m2, speedCar);
+      analogWrite(ENA_m2, speedCar);
 
 
       digitalWrite(IN_23, HIGH);
       digitalWrite(IN_24, LOW);
-	    analogWrite(ENB_m2, speedCar);
+      analogWrite(ENB_m2, speedCar);
 
   }
 
@@ -154,22 +186,22 @@ void goBack(){
 
       digitalWrite(IN_11, LOW);
       digitalWrite(IN_12, HIGH);
-	    analogWrite(ENA_m1, speedCar);
+      analogWrite(ENA_m1, speedCar);
 
 
       digitalWrite(IN_13, HIGH);
       digitalWrite(IN_14, LOW);
-	    analogWrite(ENB_m1, speedCar);
+      analogWrite(ENB_m1, speedCar);
 
 
       digitalWrite(IN_21, HIGH);
       digitalWrite(IN_22, LOW);
-	    analogWrite(ENA_m2, speedCar);
+      analogWrite(ENA_m2, speedCar);
 
 
       digitalWrite(IN_23, LOW);
       digitalWrite(IN_24, HIGH);
-	    analogWrite(ENB_m2, speedCar);
+      analogWrite(ENB_m2, speedCar);
 
   }
 
@@ -177,22 +209,22 @@ void goRight(){
 
       digitalWrite(IN_11, LOW);
       digitalWrite(IN_12, HIGH);
-	    analogWrite(ENA_m1, speedCar);
+      analogWrite(ENA_m1, speedCar);
 
 
       digitalWrite(IN_13, HIGH);
       digitalWrite(IN_14, LOW);
-	    analogWrite(ENB_m1, speedCar);
+      analogWrite(ENB_m1, speedCar);
 
 
       digitalWrite(IN_21, LOW);
       digitalWrite(IN_22, HIGH);
-	    analogWrite(ENA_m2, speedCar);
+      analogWrite(ENA_m2, speedCar);
 
 
       digitalWrite(IN_23, HIGH);
       digitalWrite(IN_24, LOW);
-	    analogWrite(ENB_m2, speedCar);
+      analogWrite(ENB_m2, speedCar);
 
 
   }
@@ -201,22 +233,22 @@ void goLeft(){
 
       digitalWrite(IN_11, HIGH);
       digitalWrite(IN_12, LOW);
-	    analogWrite(ENA_m1, speedCar);
+      analogWrite(ENA_m1, speedCar);
 
 
       digitalWrite(IN_13, LOW);
       digitalWrite(IN_14, HIGH);
-	    analogWrite(ENB_m1, speedCar);
+      analogWrite(ENB_m1, speedCar);
 
         
       digitalWrite(IN_21, HIGH);
       digitalWrite(IN_22, LOW);
-	    analogWrite(ENA_m2, speedCar);
+      analogWrite(ENA_m2, speedCar);
 
 
       digitalWrite(IN_23, LOW);
       digitalWrite(IN_24, HIGH);
-	    analogWrite(ENB_m2, speedCar);
+      analogWrite(ENB_m2, speedCar);
 
         
   }
@@ -315,30 +347,30 @@ void stopRobot(){
 
       digitalWrite(IN_11, LOW);
       digitalWrite(IN_12, LOW);
-	    analogWrite(ENA_m1, speedCar);
+      analogWrite(ENA_m1, speedCar);
 
 
       digitalWrite(IN_13, LOW);
       digitalWrite(IN_14, LOW);
-	    analogWrite(ENB_m1, speedCar);
+      analogWrite(ENB_m1, speedCar);
 
   
       digitalWrite(IN_21, LOW);
       digitalWrite(IN_22, LOW);
-	    analogWrite(ENA_m2, speedCar);
+      analogWrite(ENA_m2, speedCar);
 
       
       digitalWrite(IN_23, LOW);
       digitalWrite(IN_24, LOW);
-	    analogWrite(ENB_m2, speedCar);
+      analogWrite(ENB_m2, speedCar);
   
   }
   
 void loop(){
   
 if (Serial.available() > 0) {
-	command = Serial.read();
-	stopRobot(); 			//Initialize with motors stopped.
+  command = Serial.read();
+  stopRobot();      //Initialize with motors stopped.
 
 if (lightFront) {digitalWrite(light_FR, HIGH); digitalWrite(light_FL, HIGH);}
 if (!lightFront) {digitalWrite(light_FR, LOW); digitalWrite(light_FL, LOW);}
@@ -376,9 +408,18 @@ case 'v':horn = false;break;
 
 }
 }
-}                                                                                                                                        
-</p>
-</pre>
-</font>
-</body>
+}                                                                                                                                                                                                       
+                </p>
+           </div>                                              
+</div>
+ 
+</center>
+       
+
+    </body>
+
+   
+
+<p></p>
+
 </html>

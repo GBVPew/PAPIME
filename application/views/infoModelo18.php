@@ -1,67 +1,96 @@
-<p></p>
-<div class="center">
-      <a href="<?php echo base_url();?>modelos/raspberry" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
-  </div> 
-  <!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-	<title>Practica 18</title>
-<style>
-	
-p.ex1 {
- 
-  padding: 0px 150px 0px;
-}
-p.ex2 {
-  border: 7px solid green; 
-  padding: 0px 150px 0px;
-}
+  <style>
 
 
-</style>
-</head>
-<body>
-<font color="#000000"face="Arial">
-<center>
-<h1><br></br>Practica 18: Sistema de Alarma con un sensor Ultrasonico
-<br></br></h1>
-<img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic18.png')?>">
-</center>
-
-
-
-
-<pre>
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Materiales:</b>
-
-1 Arduino UNO
-1 Placa de pruebas (Protoboard) 
-4 Resistensias de 220Ω
-1 Zumbador
-3 LEDs
-1 Sensor Ultrasonico HC-SR04
-1 Alambre para conexiones
-
-                                                                                                  
-</p>
-</pre>
-
-    
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Descripción del ejercicio:</b><br></br>
-Pequeño ejercicio sobre hacer un sistema de alarma con un sensor Ultrasonico ya que este detecta quien se acerca esto es muy practico y facil de hacer.
-
-<br>
-<br>
-El codigo que usaremos sera el siguiente:
-</br>
-</br>
-</p>
-
-<pre>
-<p class="ex2"><font color="#000000" size="4" face="Arial">
+    td{
+      font-size: 15px;
+      line-height: 20px;
+      padding: 30px 100px 30px 100px;
+      text-align: justify;
+      vertical-align: top;
+      width: 50%;
+  }
   
+
+ 
+
+ </style>
+</head>
+
+    <body>
+
+      <center style="font-size: 30px ">
+     <p color="000000" size="10" face="Arial">Sistema de Alarma con un sensor Ultrasonico</p>
+      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic18.png')?>"
+      width="300"
+      height="300"
+      style="padding-bottom: 30px" >
+      </center>
+        <table>
+            <tr>
+              <td>                    
+            <b>Descripción del ejercicio:</b><br></br>  
+            Pequeño ejercicio sobre hacer un sistema de alarma con un sensor Ultrasonico ya que este detecta quien se acerca esto es muy practico y facil de hacer.<br>
+                <br>
+            El codigo que usaremos sera el siguiente:
+    </br>
+  </br>
+ 
+             </td>
+
+                <td>
+                   <b>Materiales:</b>
+                   <ol type=”A”>
+                      <li> 1 Arduino UNO
+                      </li>
+                      <li> 1 Placa de pruebas (Protoboard) 
+                      </li>
+                      <li> 4 Resistensias de 220Ω
+                      </li>
+                      <li> 1 Zumbador
+
+                      </li>
+                      <li> 3 LEDs
+                      </li>
+                      <li> 1 Sensor Ultrasonico HC-SR04
+                      </li><li> 1 Alambre para conexiones
+                      </li>
+                   </ol>                                   
+                </td>
+                
+            </tr>
+        </table>
+<center>
+
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <style>
+    #scroll{
+       padding-top: 20px ;
+        height:200px;
+        width:600px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    </style>
+</head>
+ 
+<body>
+   <p></p>
+  <div class="center">
+      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
+      <p></p>                 
+  </div> 
+ <div id="scroll">
+  <div align="left">
+                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
+
+                        
 #define trigPin 2
 #define echoPin 3
 #define LEDlampRed 4
@@ -121,10 +150,18 @@ tone(soundbuzzer, sound);
 }
 
 delay(300);
-}
-                                                                                                          
-</p>
-</pre>
-</font>
-</body>
+}                                                                            
+                </p>
+           </div>                                              
+</div>
+ 
+</center>
+       
+
+    </body>
+
+   
+
+<p></p>
+
 </html>
