@@ -50,7 +50,7 @@
   
   La fuente de alimentacion de los Motores se conecta a tierra y<br>
   el positivo al pin 8 del puente H. 
-  <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic10.png')?>"> <br>
+  <br>
                 <br>
 
             El codigo que usaremos sera el siguiente:
