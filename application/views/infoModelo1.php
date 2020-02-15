@@ -3,25 +3,31 @@
 <html>
 <head>
   <style>
+
+
     td{
       font-size: 15px;
       line-height: 20px;
-      padding: 150px;
+      padding: 30px 100px 30px 100px;
       text-align: justify;
       vertical-align: top;
       width: 50%;
   }
-    }
+  
+
+ 
 
  </style>
 </head>
 
     <body>
 
-      <center>
-     <br></br><p color="000000" size="7" face="Arial">LUZ INTERMITENTE</p><br></br>
-      <img class="responsive-img" src="<?php echo base_url('assetC:\xampp\htdocs\SUAC\A3.phps/img/arduino/practic1.png')?>"width="200"
-     height="200">
+      <center style="font-size: 30px ">
+     <p color="000000" size="10" face="Arial">LUZ INTERMITENTE</p>
+      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic1.png')?>"
+      width="300"
+      height="300"
+      style="padding-bottom: 30px" >
       </center>
         <table>
             <tr>
@@ -50,14 +56,16 @@
             </tr>
         </table>
 <center>
+
+
 <html lang="es">
 <head>
     <meta charset="utf-8">
     <style>
     #scroll{
-        ;
-        height:100px;
-        width:500px;
+       padding-top: 20px ;
+        height:200px;
+        width:600px;
         overflow-y:scroll;
         overflow-x:hidden;
     }
@@ -65,21 +73,27 @@
 </head>
  
 <body>
+   <p></p>
+  <div class="center">
+      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
+      <p></p>                 
+  </div> 
  <div id="scroll">
   <div align="left">
-                <p color="000000" size="4" face="Arial">
-                      int ledPin = 13; // Definición de la salida en el PIN 13
-                      void setup() //Configuración 
-                      {
-                      pinMode(ledPin, OUTPUT); // designa la salida digital al PIN 13
-                      }
-                      void loop() // bucle de funcionamiento
-                      {
-                      digitalWrite(ledPin, HIGH); // activa el LED
-                      delay(1000); // espera 1 seg. (tiempo encendido)
-                      digitalWrite(ledPin, LOW); // desactiva el LED
-                      delay(1000); // espera 1 seg. (tiempo apagado)
-                      }                                                                                                                              
+                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
+
+                      int ledPin = 13; // Definición de la salida en el PIN 13<br/>
+                      void setup() //Configuración <br/>
+                      {<br/>
+                      pinMode(ledPin, OUTPUT); // designa la salida digital al PIN 13<br/>
+                      }<br/>
+                      void loop() // bucle de funcionamiento<br/>
+                      {<br/>
+                      digitalWrite(ledPin, HIGH); // activa el LED<br/>
+                      delay(1000); // espera 1 seg. (tiempo encendido)<br/>
+                      digitalWrite(ledPin, LOW); // desactiva el LED<br/>
+                      delay(1000); // espera 1 seg. (tiempo apagado)<br/>
+                      }                                                  <br/>                                                                            
                 </p>
            </div>                                              
 </div>
@@ -89,10 +103,7 @@
 
     </body>
 
-    <p></p>
-  <div class="center">
-      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
-  </div> 
+   
 
 <p></p>
 
