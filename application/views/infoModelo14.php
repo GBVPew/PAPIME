@@ -1,96 +1,63 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<p></p>
+<div class="center">
+      <a href="<?php echo base_url();?>modelos/raspberry" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
+  </div> 
+  <!DOCTYPE html>
 <html>
 <head>
-  <style>
-
-
-    td{
-      font-size: 15px;
-      line-height: 20px;
-      padding: 30px 100px 30px 100px;
-      text-align: justify;
-      vertical-align: top;
-      width: 50%;
-  }
-  
-
+	<title>Practica 14</title>
+<style>
+	
+p.ex1 {
  
+  padding: 0px 150px 0px;
+}
+p.ex2 {
+  border: 7px solid green; 
+  padding: 0px 150px 0px;
+}
 
- </style>
+
+</style>
 </head>
-
-    <body>
-
-      <center style="font-size: 30px ">
-     <p color="000000" size="10" face="Arial">Luces Audioritmicas</p>
-      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic14.png')?>"
-      width="300"
-      height="300"
-      style="padding-bottom: 30px" >
-      </center>
-        <table>
-            <tr>
-              <td>                    
-            <b>Descripción del ejercicio:</b><br></br>  
-            Aprenderemos a instalar un sistema audioritmico basico con leds, para conocer el comportamiento del audio con los datos arrojados para encender los LEDs a el ritmo de nuestra musica.
-			<br></br>           
-                  
-          
-           <br>
-                <br>
-            El codigo que usaremos sera el siguiente:
-    </br>
-  </br>
- 
-             </td>
-
-                <td>
-                   <b>Materiales:</b>
-                   <ol type=”A”>
-                      <li>1 Arduino UNO
-                      </li>
-                      <li>8 LEDs
-                      </li>
-                      <li>1 Cable de audio (micro jack)
-                      </li>
-                      <li>1 Placa de pruebas (Protoboard) 
-                      </li>
-                      <li>1 Alambre para conexiones
-                      </li>
-                   </ol>                                   
-                </td>
-                
-            </tr>
-        </table>
-<center>
-
-
-<html lang="es">
-<head>
-    <meta charset="utf-8">
-    <style>
-    #scroll{
-       padding-top: 20px ;
-        height:200px;
-        width:600px;
-        overflow-y:scroll;
-        overflow-x:hidden;
-    }
-    </style>
-</head>
- 
 <body>
-   <p></p>
-  <div class="center">
-      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
-      <p></p>                 
-  </div> 
- <div id="scroll">
-  <div align="left">
-                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
+<font color="#000000"face="Arial">
+<center>
+<h1><br></br>Practica 14: Luces Audioritmicas
+<br></br></h1>
+<img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic14.png')?>">
+</center>
 
-                      //Declaramos los leds
+
+
+
+<pre>
+<p class="ex1"><font color="#000000" size="4" face="Arial">
+<b>Materiales:</b>
+
+1 Arduino UNO
+8 LEDs
+1 Cable de audio (micro jack)
+1 Placa de pruebas (Protoboard)  
+1 Alambre para conexiones                                                                                                        
+</p>
+</pre>
+
+    
+<p class="ex1"><font color="#000000" size="4" face="Arial">
+<b>Descripción del ejercicio:</b><br></br>
+Aprenderemos a instalar un sistema audioritmico basico con leds, para conocer el comportamiento del audio con los datos arrojados para encender los LEDs a el ritmo de nuestra musica.
+<br>
+<br>
+El codigo que usaremos sera el siguiente:
+</br>
+</br>
+</p>
+
+<pre>
+<p class="ex2"><font color="#000000" size="4" face="Arial">
+
+//Declaramos los leds
 int LED1 = 3;
 int LED2 = 4;
 int LED3 = 5;
@@ -200,18 +167,9 @@ else{
 digitalWrite(LED8, LOW);
 }
 }
-}                                                                              
-                </p>
-           </div>                                              
-</div>
- 
-</center>
-       
-
-    </body>
-
-   
-
-<p></p>
-
+}                                                                                                                                  
+</p>
+</pre>
+</font>
+</body>
 </html>

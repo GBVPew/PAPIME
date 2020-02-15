@@ -47,12 +47,9 @@
                 <td>
                    <b>Materiales:</b>
                    <ol type=”A”>
-                      <li> 1 Arduino UNO
-                      </li>
-                      <li> 1 Diodo Led
-                      </li>
-                      <li> 1 Resistencia 220Ω
-                      </li>
+                      <li>1 Arduino UNO</li>
+                      <li>1 Diodo Led</li>
+                      <li>1 Resistencia 220Ω</li>
                    </ol>                                   
                 </td>
                 

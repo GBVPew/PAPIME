@@ -1,91 +1,129 @@
-<p></p>
-  <div class="center">
-      <a href="<?php echo base_url();?>modelos/control2" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
-  </div> 
-  <!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-	<title>Practica 7</title>
-<style>
-	
-p.ex1 {
+  <style>
+
+
+    td{
+      font-size: 15px;
+      line-height: 20px;
+      padding: 30px 100px 30px 100px;
+      text-align: justify;
+      vertical-align: top;
+      width: 50%;
+  }
+  
+
  
-  padding: 0px 150px 0px;
-}
-p.ex2 {
-  border: 7px solid green; 
-  padding: 0px 150px 0px;
-}
 
-
-</style>
+ </style>
 </head>
-<body>
-<font color="#000000"face="Arial">
-<center>
-<h1><br></br>Practica 7: Sensor de Fuerza.
-<br></br></h1><img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic7.png')?>">
-</center>
 
+    <body>
 
-
-
-<pre>
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Materiales:</b>
-
-1 Arduino UNO
-1 Placa de pruebas (Protoboard)  
-1 Alambre para conexiones 
-1 Led
-1 Zumbador                                                                                                      
-</p>
-</pre>
-
-    
-<p class="ex1"><font color="#000000" size="4" face="Arial">
-<b>Descripción del ejercicio:</b><br></br>
-Convertiremos un zumbador piezoeléctrico en un sensor de presión o fuerza
+      <center style="font-size: 30px ">
+     <p color="000000" size="10" face="Arial">Sensor de Fuerza.</p>
+      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic7.png')?>"
+      width="300"
+      height="300"
+      style="padding-bottom: 30px" >
+      </center>
+        <table>
+            <tr>
+              <td>                    
+            <b>Descripción del ejercicio:</b><br></br>  
+            
+           Convertiremos un zumbador piezoeléctrico en un sensor de presión o fuerza
 utilizando este como sensor de entrada en uno de los pines de entrada analógica de
-Arduino (PIN 2).
-
-<br>
-<br>
-El codigo que usaremos sera el siguiente:
+Arduino (PIN 2).</br>
 </br>
-</br>
-</p>
+            El codigo que usaremos sera el siguiente:
+    </br>
+  </br>
+ 
+             </td>
 
-<pre>
-<p class="ex2"><font color="#000000" size="4" face="Arial">
-int ledPin = 13;
-int piezoPin = 2;
-int THRESHOLD = 1; // Configura valor mínimo para que se encienda la salida
-PIN13
-int val = 0; // variable que almacena el valor leído por el sensor
-int t = 0; // valor del intervalo de medida
-void setup() {
- pinMode(ledPin, OUTPUT);
- Serial.begin(19200);
- Serial.println("ready"); // indicador de espera
-}
-void loop() {
- digitalWrite(ledPin,LOW); // indicador de reposo (esperando)
- val = analogRead(piezoPin); // lectura de valor del piezoeléctrico
- if( val > THRESHOLD ) { // si el valor leído es superior al mínimo establecido
- digitalWrite(ledPin, HIGH); // activa salida 13
- t = 0;
- while(analogRead(piezoPin) > THRESHOLD) {
- t++;
- } // wait for it to go LOW (espera con una pequeña histéresis)
- if(t>100) { // escribe en el puerto
- Serial.print("knock! ");
- //Serial.println(t);
- }
- }
-}                                                                                                                                       
-</p>
-</pre>
-</font>
-</body>
+                <td>
+                   <b>Materiales:</b>
+                   <ol type=”A”>
+                      <li>1 Arduino UNO</li>
+                      <li>1 Placa de pruebas (Protoboard)  </li>
+                      <li>1 Leds </li>
+                      <li>1 Zumbador  </li>
+                      
+                   </ol>                                   
+                </td>
+                
+            </tr>
+        </table>
+<center>
+
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <style>
+    #scroll{
+       padding-top: 20px ;
+        height:200px;
+        width:600px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    </style>
+</head>
+ 
+<body>
+   <p></p>
+  <div class="center">
+      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
+      <p></p>                 
+  </div> 
+ <div id="scroll">
+  <div align="left">
+                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
+face="Arial"> </br>
+const int Trigger = 2;   //Pin digital 2 para el Trigger del sensor</br>
+const int Echo = 3;   //Pin digital 3 para el Echo del sensor</br>
+
+void setup() {</br>
+  Serial.begin(9600);//iniciailzamos la comunicación</br>
+  pinMode(Trigger, OUTPUT); //pin como salida</br>
+  pinMode(Echo, INPUT);  //pin como entrada</br>
+  digitalWrite(Trigger, LOW);//Inicializamos el pin con 0</br>
+}</br>
+
+void loop()</br>
+{</br>
+
+  long t; //timepo que demora en llegar el eco</br>
+  long d; //distancia en centimetros</br>
+
+  digitalWrite(Trigger, HIGH);</br>
+  delayMicroseconds(10);          //Enviamos un pulso de 10us</br>
+  digitalWrite(Trigger, LOW);</br>
+  
+  t = pulseIn(Echo, HIGH); //obtenemos el ancho del pulso</br>
+  d = t/59;             //escalamos el tiempo a una </br>distancia en cm
+  
+  Serial.print("Distancia: ");</br>
+  Serial.print(d);      //Enviamos serialmente el valor de la distancia</br>
+  Serial.print("cm");</br>
+  Serial.println();</br>
+  delay(100);          //Hacemos una pausa de 100ms</br>
+}                                                           
+                </p>
+           </div>                                              
+</div>
+ 
+</center>
+       
+
+    </body>
+
+   
+
+<p></p>
+
 </html>

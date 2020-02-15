@@ -1,96 +1,63 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<p></p>
+<div class="center">
+      <a href="<?php echo base_url();?>modelos/raspberry" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>                   
+  </div> 
+  <!DOCTYPE html>
 <html>
 <head>
-  <style>
-
-
-    td{
-      font-size: 15px;
-      line-height: 20px;
-      padding: 30px 100px 30px 100px;
-      text-align: justify;
-      vertical-align: top;
-      width: 50%;
-  }
-  
-
+	<title>Practica 13</title>
+<style>
+	
+p.ex1 {
  
+  padding: 0px 150px 0px;
+}
+p.ex2 {
+  border: 7px solid white; 
+  padding: 0px 150px 0px;
+}
 
- </style>
+
+</style>
 </head>
-
-    <body>
-
-      <center style="font-size: 30px ">
-     <p color="000000" size="10" face="Arial">Notas musicales con un potenciometro</p>
-      <img class="responsive-img" src="<?php echo base_url('assets/img/arduino/practic13.png')?>"
-      width="300"
-      height="300"
-      style="padding-bottom: 30px" >
-      </center>
-        <table>
-            <tr>
-              <td>                    
-            <b>Descripción del ejercicio:</b><br></br>  
-            Al girar el potenciómetro, el arduino procesara las señales de entrada proporcionadas por este, para que la bocina, reproduzca las notas. De antemano, se programan las frecuencias de cada una de las notas, según la octava, en la cual se encuentren escritas en el pentagrama.
-            <br></br>           
-                              
-          
-            <br>
-                <br>
-            El codigo que usaremos sera el siguiente:
-    </br>
-  </br>
- 
-             </td>
-
-                <td>
-                   <b>Materiales:</b>
-                   <ol type=”A”>
-                      <li>1 Arduino UNO
-                      </li>
-                      <li>1 Potenciometro de 100KΩ
-                      </li>
-                      <li>1 Placa de pruebas (Protoboard)  
-                      </li>
-                      <li>1 Alambre para conexiones    
-                      </li>
-                      <li>1 Bocina de 8 Ω a 1W      
-                      </li>
-                   </ol>                                   
-                </td>
-                
-            </tr>
-        </table>
-<center>
-
-
-<html lang="es">
-<head>
-    <meta charset="utf-8">
-    <style>
-    #scroll{
-       padding-top: 20px ;
-        height:200px;
-        width:600px;
-        overflow-y:scroll;
-        overflow-x:hidden;
-    }
-    </style>
-</head>
- 
 <body>
-   <p></p>
-  <div class="center">
-      <a href="<?php echo base_url();?>modelos/bobina" class="waves-effect waves-light btn blue-grey lighten-2 center ">Ir a modelo</a>  
-      <p></p>                 
-  </div> 
- <div id="scroll">
-  <div align="left">
-                <p color="000000" size="4" face="Arial" LINE-HEIGHT S=5px>
+<font color="#000000"face="Arial">
+<center>
+<h1><br></br>Practica 13: Notas musicales con un potenciometro
+<br></br></h1>
+<img src="imagenes/arduino/practic13.png">
+</center>
 
-                     int altavoz = 9;
+
+
+
+<pre>
+<p class="ex1"><font color="#000000" size="4" face="Arial">
+<b>Materiales:</b>
+
+1 Arduino UNO
+1 Potenciometro de 100KΩ
+1 Placa de pruebas (Protoboard)  
+1 Alambre para conexiones  
+1 Bocina de 8 Ω a 1W                                                                                                      
+</p>
+</pre>
+
+    
+<p class="ex1"><font color="#000000" size="4" face="Arial">
+<b>Descripción del ejercicio:</b><br></br>
+Al girar el potenciómetro, el arduino procesara las señales de entrada proporcionadas por este, para que la bocina, reproduzca las notas. De antemano, se programan las frecuencias de cada una de las notas, según la octava, en la cual se encuentren escritas en el pentagrama.
+
+<br>
+<br>
+El codigo que usaremos sera el siguiente:
+</br>
+</br>
+</p>
+
+<pre>
+<p class="ex2"><font color="#000000" size="4" face="Arial">
+int altavoz = 9;
 const int DO  = 262;
 const int RE  = 294;
 const int MI  = 330;
@@ -277,18 +244,9 @@ Serial.print("FA");
 delay(100);  
 }
 
-}                       
-                </p>
-           </div>                                              
-</div>
- 
-</center>
-       
-
-    </body>
-
-   
-
-<p></p>
-
+}                                  
+</p>
+</pre>
+</font>
+</body>
 </html>
