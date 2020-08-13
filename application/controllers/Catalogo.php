@@ -27,7 +27,7 @@ class Catalogo extends CI_Controller {
         $this->load->view('footer');
         $this->load->library('javascript');
     }
-
+    
 
 
     // public function informacion_Modelos() {

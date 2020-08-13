@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" context="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-
-        <title>WebGL</title>
+         <link rel="icon" type="image/png" href="assets/Imagenes/2.png" />
+        <title>Modelos Papime</title>
         <meta name="description" content="">
 
         <!--Imported CSS Links-->
@@ -28,32 +28,51 @@
         <script src="<?php echo base_url('assets/js/prueba.js') ?>"></script>
         <script src="<?php echo base_url('assets/js/THREEx.WindowResize.js') ?>"></script>
         <script src="<?php echo base_url('assets/js/OrbitControls.js') ?>"></script> 
+  
+    <!--Uikit-->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"href="<?php echo base_url('assets/Uikit/css/uikit.min.css') ?>" />
+        <script src="<?php echo base_url('assets/Uikit/js/uikit.min.js') ?>"></script>
+        <script src="<?php echo base_url('assets/Uikit/js/uikit-icons.min.js') ?>"></script>
 
 
-        <style>
-          html, body, .block {
-              height: 10%;
-          }
-          nav ul li a:hover, nav ul li a.active {
-              background-color: rgba(255, 0, 0, 0.2);
-          }
-          footer {
-              padding-left: 5;
-          }
-        </style>
+       
     </head>
 
 
-<body>
-  	<nav class="light-blue darken-3" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="<?php echo base_url();?>" class="brand-logo"><FONT SIZE=5 COLOR="white"> Modelos de Realidad Aumentada </FONT></font></a>
+<header class="row">
+    <div class="encabezado col s7   indigo lighten-3 valign-wrapper" style="padding:  0px 30px 0px 30px" ><a  href="<?php echo base_url();?>Inicio"  style="color:#FFFFFF"; >MODELOS DE REALIDAD AUMENTADA </a></div></div>
+    <div class="encabezado col s3 indigo lighten-2 valign-wrapper" style="padding:  0px 0px 0px 10px" ><a  href="<?php echo base_url();?>Catalogo"  style="color:#FFFFFF"; >Catalogo Arduino </a></div>
+    <div class="encabezado col s2   indigo lighten-1 valign-wrapper"><a  >
+        <div class="uk-inline">
+    <button class="uk-button uk-button-text" type="button" style="color:#FFFFFF" >Mas</button>
+    <div uk-dropdown>
+        <ul class="uk-nav uk-dropdown-nav">
+           
+            <li class="uk-nav-header">Descargas</li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="<?php echo base_url();?>Inicio/Descargas";>Modelos</a></li>
+            <li><a href="#"></a></li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+    </a></div>
 
 
-            <a href="<?php echo base_url();?>" data-activates="nav-mobile" class="button-collapse">
-                <i class="mdi-navigation-menu"></i>
-            </a>
-        </div>
-    </nav>
+
+
+  </header>
+
+
+  <style>
+  header, .encabezado {
+    height: 9vh
+
+</style>
 
   

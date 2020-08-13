@@ -1,25 +1,17 @@
-<footer class="page-footer light-blue">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <p class="light-blue lighten-1"></p>
+<footer class="row" >
+  
+  <div class=" fin col s10  indigo lighten-2 "></div>
+  <div class=" fin col s2  indigo lighten-3 "></div>
+  
+</footer>
 
 
-        </div>
-        <div class="col l3 s12">
-          
-        </div>
-              </div>
-    </div>
-    <div class="footer-copyright">
-         </div>
-  </footer>
 
  <!--  Scripts-->
 <script src="<?php echo base_url('assets/js/materialize.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/init.js') ?>"></script>
 
- 
+
 <!-- codigo pushpin -->
     <script>
       $(document).ready(function(){
@@ -48,9 +40,25 @@
     height : 600, 
     interval: 5000 });  
 });  
+
+ <script >
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+
+</script>
 </script>  
 <!-- Inicializacion de aos-->
  <script> AOS.init();</script>
 
 </body>
+<style>
+   footer, .fin{
+    height: 10vh
+    
+      }
+   
+</style>
 </html>

@@ -27,55 +27,15 @@ class Inicio extends CI_Controller {
         $this->load->view('footer');   
     }
 
+    public function Descargas() {
+        // $this->load->helper('url');
+        $this->load->view('header');
+        $this->load->view('descargas');
+        $this->load->view('footer');   
+    }
 
 
-    // public function informacion_Modelos() {
-    //     // $this->load->helper('url');
-    //     $this->load->view('header');
-    //     $this->load->view('infoModelos');
-    //     $this->load->view('footer');
-    //     // $this->load->library('javascript');
-    // }     
-
-    // // public function catalogo_RA() {
-    // //     // $this->load->helper('url');
-    // //     $this->load->view('header');
-    // //     $this->load->view('catRA');
-    // //     $this->load->view('footer');
-    // //     // $this->load->library('javascript');
-    // // } 
-
-    // // public function catalogo_RV() {
-    // //     // $this->load->helper('url');
-    // //     $this->load->view('header');
-    // //     $this->load->view('catRV');
-    // //     $this->load->view('footer');
-    // //     // $this->load->library('javascript');
-    // // }
-
-    // public function catalogo_Modelos() {
-    //     // $this->load->helper('url');
-    //     $this->load->view('header');
-    //     $this->load->view('catModelos');
-    //     $this->load->view('footer');
-    //     // $this->load->library('javascript');
-    // }  
-
-    // public function horario_cursos() {
-    //     // $this->load->helper('url');
-    //     $this->load->view('header');
-    //     $this->load->view('cursos');
-    //     $this->load->view('footer');
-    //     // $this->load->library('javascript');
-    // }
-
-    // public function horario_eventos() {
-    //     // $this->load->helper('url');
-    //     $this->load->view('header');
-    //     $this->load->view('eventos');
-    //     $this->load->view('footer');
-    //     // $this->load->library('javascript');
-    // }    
+   
 }
 
 /* End of file welcome.php */

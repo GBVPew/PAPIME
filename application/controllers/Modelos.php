@@ -28,60 +28,104 @@ class Modelos extends CI_Controller {
 
     public function arduino() {
         $this->load->view('header');
-        $this->load->view('modelo1');   
+        $this->load->view('Modelos/modelo1');   
         $this->load->view('footer');
     }
     public function bobina() {
         $this->load->view('header');
-        $this->load->view('modelo2');   
+        $this->load->view('Modelos/modelo2');   
         $this->load->view('footer');
     }
     public function capacitor() {
         $this->load->view('header');
-        $this->load->view('modelo3');   
+        $this->load->view('Modelos/modelo3');   
         $this->load->view('footer');
     }
-    public function celdaSolar() {
+    public function APractica4() {
         $this->load->view('header');
-        $this->load->view('modelo4');   
+        $this->load->view('Modelos/modelo4');   
         $this->load->view('footer');
     }
-    public function celular() {
+    public function APractica5() {
         $this->load->view('header');
-        $this->load->view('modelo5');   
+        $this->load->view('Modelos/modelo5');   
         $this->load->view('footer');
     }
     public function control1() {
         $this->load->view('header');
-        $this->load->view('modelo6');   
+        $this->load->view('Modelos/modelo6');   
         $this->load->view('footer');
     }
-    public function control2() {
+    public function APractica7() {
         $this->load->view('header');
-        $this->load->view('modelo7');   
+        $this->load->view('Modelos/modelo7');   
         $this->load->view('footer');
     }
-    public function dron() {
+    public function APractica8() {
         $this->load->view('header');
-        $this->load->view('modelo8');   
+        $this->load->view('Modelos/modelo8');   
         $this->load->view('footer');
     }
-    public function microprocesador() {
+    public function APractica9() {
         $this->load->view('header');
-        $this->load->view('modelo9');   
+        $this->load->view('Modelos/modelo9');   
         $this->load->view('footer');
     }
     public function osciloscopio() {
         $this->load->view('header');
-        $this->load->view('modelo10');   
+        $this->load->view('Modelos/modelo10');   
         $this->load->view('footer');
     }
     public function raspberry() {
         $this->load->view('header');
-        $this->load->view('modelo11');   
+        $this->load->view('Modelos/modelo11');   
         $this->load->view('footer');
     }
-
+    public function APractica12() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo12');   
+        $this->load->view('footer');
+    }
+    public function APractica13() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo13');   
+        $this->load->view('footer');
+    }
+    public function APractica14() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo14');   
+        $this->load->view('footer');
+    }
+     public function APractica15() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo15');   
+        $this->load->view('footer');
+    }
+    public function APractica16() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo16');   
+        $this->load->view('footer');
+    }
+    public function APractica17() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo17');   
+        $this->load->view('footer');
+    }
+    public function APractica18() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo18');   
+        $this->load->view('footer');
+    }
+    public function APractica19() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo19');   
+        $this->load->view('footer');
+    }
+    public function APractica20() {
+        $this->load->view('header');
+        $this->load->view('Modelos/modelo20');   
+        $this->load->view('footer');
+    }
     
 }
 
